@@ -1,3 +1,20 @@
+
+#two way binding with ngmodal
+
+<h1>Books</h1>
+<button (click)="handleClick()" [disabled]="isDisabled">books</button>
+<input type="text" [(ngModel)]="myName">
+<p>{{myName}}</p>
+
+<ul>
+  <li>{{ name }}
+    <img [src]="src" [alt]="name" />
+  </li>
+  <li>{{ name2 }}
+    <img [src]="src2" [alt]="name2" />
+  </li>
+</ul>
+
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
